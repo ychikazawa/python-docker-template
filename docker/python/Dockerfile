@@ -19,13 +19,10 @@ RUN apt-get update -y --fix-missing \
 
 WORKDIR /usr/src/source
 
-ENV PIPENV_VENV_IN_PROJECT=1
-
-COPY ./source/Pipfile  ./
+COPY ./source/requirements.txt  ./
 
 RUN pip install --upgrade pip \
-    && pip install pipenv \
-    && pipenv install --skip-lock --system --dev
+    && pip install -r requirements.txt
 
 EXPOSE 8888
 
