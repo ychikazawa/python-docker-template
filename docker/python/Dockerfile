@@ -1,7 +1,7 @@
 FROM python:3.7
 
 LABEL version="1.0"
-LABEL maintainer="Yuto Chikazawa <minet6759@gmail.com>"
+LABEL maintainer="Yuto Chikazawa <chikazawa0517@gmail.com>"
 LABEL description="python-docker-template"
 
 ENV PYTHONUNBUFFERED=1
