@@ -1,3 +1,13 @@
+# -----------------
+# Custom
+# -----------------
+app/log/*
+!.gitkeep
+
+
+# -----------------
+# Python
+# -----------------
 
 # Created by https://www.gitignore.io/api/code,flask,git,linux,macos,osx,pycharm,pycharm+all,pycharm+iml,python,osx,venv,virtualenv,windows,webstorm,webstorm+all,webstorm+iml
 # Edit at https://www.gitignore.io/?templates=code,flask,git,linux,macos,osx,pycharm,pycharm+all,pycharm+iml,python,osx,venv,virtualenv,windows,webstorm,webstorm+all,webstorm+iml
@@ -625,7 +635,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/code,flask,git,linux,macos,osx,pycharm,pycharm+all,pycharm+iml,python,osx,venv,virtualenv,windows,webstorm,webstorm+all,webstorm+iml
-
-# Custom ignore
-source/log/*
-!.gitkeep

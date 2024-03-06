@@ -1,18 +1,16 @@
 version: "3"
 
 services:
-  python:
-    build:
-      context: .
-      dockerfile: docker/python/Dockerfile
-    container_name: python-docker-template
+  app:
+    build: .
     environment:
       - TZ=Asia/Tokyo
     env_file:
-      - ./docker/python/.env
+      - .env
     ports:
       - "8888:8888"
     volumes:
-      - ./source:/usr/src/source
-    working_dir: /usr/src/source
+      - ./app:/app
+    working_dir: /app
+    command: jupyter-notebook --port=8888 --ip=0.0.0.0 --allow-root --NotebookApp.token=''
     tty: true

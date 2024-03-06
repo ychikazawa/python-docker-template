@@ -4,26 +4,32 @@ Python + Docker environment template.
 ## Requirement
 
 - [Docker](https://www.docker.com/)
-  - docker-compose
 
 ## Usage
-Build image:
 
-```console
-$ cp docker/python/.env.example docker/python/.env
-$ docker-compose build
+Create .env file:
+
+```shell
+cp .env.example .env
 ```
 
-Run container:
+Build & run container:
 
-```console
-$ docker-compose up -d
-$ docker-compose exec python bash
+```shell
+docker-compose up --build
 ```
 
-Go to http://localhost:8888 and you'll see the notebooks.
+Run script:
 
+```shell
+docker-compose exec app python app.py
+```
 
+### Jupyter Notebook
+
+You can use jupyter for test.
+
+http://localhost:8888/
 
 
 ## Licence
